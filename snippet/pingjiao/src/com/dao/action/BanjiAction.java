@@ -24,7 +24,7 @@ import com.dao.util.PagerMetal;
  * 班级控制
  *
  */
-public class ClassAction extends  PageActionBase{
+public class BanjiAction extends  PageActionBase{
     /**
 	 * 
 	 */
@@ -55,7 +55,7 @@ public class ClassAction extends  PageActionBase{
             Banji banji=new Banji();
 			banji.setName(name==null?"":name);
 		    //产生验证
-		    Boolean validateresult=saveValidate( "where name='"+name+"'");
+		    Boolean validateresult = saveValidate( "where name='"+name+"'");
 		    if(validateresult){
 		    	try {
 					request.setAttribute("errormsg","<label class='error'>班级已经存在</label>");
@@ -122,7 +122,7 @@ public class ClassAction extends  PageActionBase{
 		    DALBase.update(banji);
 		   // attachments(new Integer(banji.getId()).toString());
 			 if(forwardurl==null){
-				forwardurl="/admin/banjimanager.do?actiontype=get";
+				forwardurl="/admin/classmanager.do?actiontype=get";
 			}
 			try {
 				response.sendRedirect(SystemParam.getSiteRoot()+forwardurl);
@@ -168,7 +168,7 @@ public class ClassAction extends  PageActionBase{
 	***********************数据绑定内部支持*********************
 	*******************************************************/
 	public void   binding(){
-		 String filter="where 1=1 ";
+		 String filter="";
 		 String name=request.getParameter("name");
 	     	if(name!=null)
 	        	filter+="  and name like '%"+name+"%'  ";

@@ -58,7 +58,7 @@ public class PaikeAction extends PageActionBase {
 		String weekday = request.getParameter("weekday");
 		String kejie = request.getParameter("kejie");
 		String major=request.getParameter("major");
-	    String banji=request.getParameter("class");
+	    String banji=request.getParameter("banji");
 		SimpleDateFormat sdfpaike = new SimpleDateFormat("yyyy-MM-dd");
 		Paike paike = new Paike();
 		paike.setTno(tno == null ? "" : tno);
@@ -135,7 +135,7 @@ public class PaikeAction extends PageActionBase {
 		String weekday = request.getParameter("weekday");
 		String kejie = request.getParameter("kejie");
 		String major=request.getParameter("major");
-	    String banji=request.getParameter("class");
+	    String banji=request.getParameter("banji");
 		SimpleDateFormat sdfpaike = new SimpleDateFormat("yyyy-MM-dd");
 		paike.setTno(tno);
 		paike.setTname(tname);

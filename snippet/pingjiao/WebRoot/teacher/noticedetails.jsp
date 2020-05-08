@@ -17,45 +17,33 @@
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
- <head>
-  <title>公告信息查看</title>
-    <script type="text/javascript" src="<%=SystemParam.getSiteRoot() %>/webui/jquery/jquery-1.8.3.min.js"></script>
-     <link href="<%=SystemParam.getSiteRoot() %>/admin/css/webtable.css" rel="stylesheet" type="text/css" />
-</head>
-<body >
-	 	 <div class="search-title">
-<h2>
-	                      查看公告
-	                </h2>
-	                <div class="description">
-	                </div>
-              </div>
-				        <table cellpadding="0" cellspacing="1" class="grid" width="100%" >
-											   <tr>
-											   <td width="10%" align="right" >标题:</td>
-											   <td>
-												   ${requestScope.notice.title}
-												</td>
-											   </tr>
-											   <tr>
-											   <td align="right">创建时间:</td>
-											   <td>
-											         <fmt:formatDate  value="${requestScope.notice.createtime}" pattern="yyyy-MM-dd" />
-												   
-												</td>
-											   </tr>
-											   <tr>
-											   <td width="10%" align="right" >发布人:</td>
-											   <td>
-												   ${requestScope.notice.pubren}
-												</td>
-											   </tr>
-											 <tr>
-											   <td align="right">内容:</td>
-											   <td colspan="3">
-												${requestScope.notice.content}
-											   </td>
-											 </tr>
-				        </table>
-</body>
+	<head>
+  		<title>公告信息查看</title>
+    	<script type="text/javascript" src="<%=SystemParam.getSiteRoot() %>/webui/jquery/jquery-1.8.3.min.js"></script>
+     	<link href="<%=SystemParam.getSiteRoot() %>/admin/css/webtable.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body >
+		<div class="search-title">
+			<h2>查看公告</h2>
+	    	<div class="description"></div>
+    	</div>
+		<table cellpadding="0" cellspacing="1" class="grid" width="100%" >
+			<tr>
+				<td width="10%" align="right" >标题:</td>
+				<td>${requestScope.notice.title}</td>
+			</tr>
+			<tr>
+				<td align="right">创建时间:</td>
+				<td><fmt:formatDate  value="${requestScope.notice.createtime}" pattern="yyyy-MM-dd" /></td>
+			</tr>
+			<tr>
+				<td width="10%" align="right" >发布人:</td>
+				<td>${requestScope.notice.pubren}</td>
+			</tr>
+			<tr>
+				<td align="right">内容:</td>
+				<td colspan="3">${requestScope.notice.content}</td>
+			</tr>
+		</table>
+	</body>
 </html>

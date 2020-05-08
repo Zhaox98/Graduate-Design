@@ -88,7 +88,7 @@ public class DALBase {
 		Session s = getSession();
 		Transaction t = s.beginTransaction();
 		String classname = NameUtil.toFirstUpper(tablename);
-		String HQL=" from " + classname + " " + (filter == null?"" : filter);
+		String HQL="from "+classname+""+(filter==null?"":filter);
 		System.out.println("HQL = " + HQL);
 		List list=null;
 		try {

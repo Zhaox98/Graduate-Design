@@ -38,7 +38,7 @@
         {
             initControl();
             $.metadata.setType("attr","validate");
-            $("#classForm").validate();
+            $("#banjiform").validate();
         });  
     </script>
 </head>
@@ -47,7 +47,7 @@
 		<h2>新建班级</h2>
 	    <div class="description"></div>
     </div>
-	<form name="classform"  method="post" action="<%=SystemParam.getSiteRoot()%>/admin/classmanager.do"  id="classForm">
+	<form name="banjiform"  method="post" action="<%=SystemParam.getSiteRoot()%>/admin/classmanager.do"  id="banjiform">
 	<table class="grid" cellspacing="1" width="100%">
 		<input type="hidden" name="id" value="${id}" />
 		<input type="hidden" name="actiontype" value="${actiontype}" />
@@ -60,10 +60,11 @@
 		<tr>
 			<td align="right" >班级名称:</td>
 			<td>
-				<input name="name" placeholder="备注" validate="{required:true,messages:{required:'请输入备注'}}" value="${requestScope.class.name}" class="input-txt" type="text" id="txtName"  />
+				<input name="name" placeholder="备注" validate="{required:true,messages:{required:'请输入备注'}}" value="${requestScope.banji.name}" class="input-txt" type="text" id="txtName"  />
 			</td>
 		</tr>
 		<tr>
+			<td></td>
 			<td colspan="4">
 				<div class="ui-button">
 					<button class="ui-button-text"><i class="icon-ok icon-white"></i>提交</button>

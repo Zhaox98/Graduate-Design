@@ -35,7 +35,7 @@
 	          <value>com.dao.entity.Notice</value>
 	          <value>com.dao.entity.Student</value>
 	          <value>com.dao.entity.Teacher</value>
-	          <value>com.dao.entity.Classes</value>
+	          <value>com.dao.entity.Banji</value>
 	          <value>com.dao.entity.Major</value>
 	        
 	          <value>com.dao.entity.Xuenian</value>

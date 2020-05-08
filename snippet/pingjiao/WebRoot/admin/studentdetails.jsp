@@ -56,7 +56,7 @@
 			</tr>
 			<tr>
 				<td align="right">班级:</td>
-				<td>${requestScope.student.class}</td>
+				<td>${requestScope.student.banji}</td>
 			
 				<td align="right">面貌:</td>
 				<td>${requestScope.student.mianmao}</td>

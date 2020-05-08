@@ -145,8 +145,8 @@
 					    	<input type="hidden" name="actiontype" value="endXuanke"/>
 					        <input type="hidden" name="id" value="<%=temcourse.getId()%>"/>
 					        <input type="hidden" name="forwardurl" value="/admin/coursemanager.do?actiontype=get"/>
-					        <button class="btn btn-danger"><i
-								class="icon-zoom-in icon-white"></i>结束选课
+					        <button class="btn btn-danger">
+					        	<i class="icon-zoom-in icon-white"></i>结束选课
 							</button>
 					    </form>
 					   	<%	} %>

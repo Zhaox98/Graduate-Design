@@ -11,7 +11,7 @@
 <%
 	Student student= (Student)request.getSession().getAttribute("student");
 	if(student!=null) {
-		Student temstudent   =(Student)DALBase.load("student","where id="+((Student)student).getId());
+		Student temstudent   =(Student)DALBase.load("student ","where id="+((Student)student).getId());
 		request.setAttribute("student",temstudent);
 	}
 	List<Student> zhuanye_datasource=DALBase.getEntity("major","");

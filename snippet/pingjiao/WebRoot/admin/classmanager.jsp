@@ -63,7 +63,7 @@
 		<div class="search-title">
 			<h2>班级管理</h2>
 			<div class="description">
-				<a href="<%=SystemParam.getSiteRoot() %>/admin/classmanager.do ? actiontype=load">新建班级</a>
+				<a href="<%=SystemParam.getSiteRoot() %>/admin/classmanager.do?actiontype=load">新建班级</a>
 			</div>
 		</div>
 		<!-- 搜索控件开始 -->
@@ -110,10 +110,9 @@
 					</tr>
 				</c:if>
 				<%
-					if(request.getAttribute("listbanji")!=null)
-					{
-						List<Classes> listbanji = ( List<Classes> )request.getAttribute("listbanji");
-						for(Classes  tembanji  :  listbanji)
+					if(request.getAttribute("listbanji")!=null) {
+						List<Banji> listbanji = (List<Banji>)request.getAttribute("listbanji");
+						for(Banji  tembanji  :  listbanji)
 						{
 				%>
 				<tr>

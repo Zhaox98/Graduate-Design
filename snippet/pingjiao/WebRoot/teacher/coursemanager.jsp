@@ -106,8 +106,8 @@
 					</tr>
 				</c:if>
 				<%	
-					if(request.getAttribute("listcourse")!=null) {
-						List<Course> listcourse=( List<Course>)request.getAttribute("listCourse");
+					if(request.getAttribute("listkecheng")!=null) {
+						List<Course> listcourse=( List<Course>)request.getAttribute("listkecheng");
 						for(Course  temcourse  :  listcourse)
 						{
 				%>

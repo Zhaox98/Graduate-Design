@@ -11,7 +11,7 @@
 	Admin admin= (Admin)request.getSession().getAttribute("admin");
 	 if(admin!=null)
 	 {
-	 	Admin temadmin = (Admin)DALBase.load("admin","where id="+((Admin)admin).getId());
+	 	Admin temadmin = (Admin)DALBase.load("admin ","where id="+((Admin)admin).getId());
 	    request.setAttribute("admin",temadmin);
 	 }
 %>

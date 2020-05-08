@@ -94,7 +94,7 @@ public class StudentAction extends PageActionBase {
 		String zhuanye = request.getParameter("zhuanye");
 		String jiguan = request.getParameter("jiguan");
 		String mobile = request.getParameter("mobile");
-		String banji = request.getParameter("class");
+		String banji = request.getParameter("banji");
 		String photo = request.getParameter("photo");
 		String mianmao = request.getParameter("mianmao");
 		String address = request.getParameter("address");
@@ -176,7 +176,7 @@ public class StudentAction extends PageActionBase {
 		String zhuanye = request.getParameter("zhuanye");
 		String jiguan = request.getParameter("jiguan");
 		String mobile = request.getParameter("mobile");
-		String banji = request.getParameter("class");
+		String banji = request.getParameter("banji");
 		String photo = request.getParameter("photo");
 		String mianmao = request.getParameter("mianmao");
 		String address = request.getParameter("address");

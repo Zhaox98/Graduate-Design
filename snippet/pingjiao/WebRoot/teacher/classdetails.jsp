@@ -12,8 +12,8 @@
     String command="add";
     if( id!=null) {
 		command="update";
-      	Classes temobjbanji=(Classes)DALBase.load("class"," where id="+ id);
-      	request.setAttribute("class",temobjbanji);
+      	Banji temobjbanji=(Banji)DALBase.load("banji"," where id="+ id);
+      	request.setAttribute("banji", temobjbanji);
     }
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -31,7 +31,7 @@
 		<table cellpadding="0" cellspacing="1" class="grid" width="100%" >
 			<tr>
 				<td width="10%" align="right" >备注:</td>
-				<td>${requestScope.class.name}</td>
+				<td>${requestScope.banji.name}</td>
 			</tr>
 		</table>
 	</body>

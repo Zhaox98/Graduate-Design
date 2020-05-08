@@ -100,8 +100,7 @@ public class AdminLogin extends ActionSupport {
 	private void studentLogin(HttpServletRequest request, HttpServletResponse response) {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
-		Student u = (Student) DALBase.load("student", " where stno='" + username
-				+ "' and password='" + password + "'");
+		Student u = (Student)DALBase.load("student", " where stno='"+username+"' and password='"+password+"'");
 
 		if (u != null) {
 			HttpSession session = request.getSession();
