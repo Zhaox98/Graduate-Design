@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.action.extension" value="do, action"/> 
+    <constant name="struts.multipart.handler" value="myRequestParser" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    
+    <bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest"
+     name="myRequestParser" class="com.dao.util.RequestParseWrapper"
+     scope="default" optional="true" />
+	<package name="admin" extends="struts-default" namespace="/admin">
+       
+		<action name="adminmanager" class="com.dao.action.AdminAction"></action>
+		<action name="login" class="com.dao.action.AdminLogin"></action>
+       	<action name="uploadmanager" class="com.dao.action.UploadAction"></action>
+		<action name="noticemanager" class="com.dao.action.NoticeAction"></action>
+		<action name="studentmanager" class="com.dao.action.StudentAction"></action>
+		<action name="teachermanager" class="com.dao.action.TeacherAction"> </action>
+		<action name="classmanager" class="com.dao.action.ClassAction"></action>
+		<action name="majormanager" class="com.dao.action.MajorAction"></action>
+		<action name="leavewordmanager" class="com.dao.action.LeavewordAction"></action>
+		<action name="xuenianmanager" class="com.dao.action.XuenianAction"></action>
+		<action name="xuankemanager" class="com.dao.action.XuankeAction"></action>
+		<action name="coursemanager" class="com.dao.action.CourseAction"></action>
+		<action name="tongjimanager" class="com.dao.action.TongjiAction"></action>
+		<action name="pjitemsmanager" class="com.dao.action.PjitemsAction"></action>
+		<action name="pingjiaomanager" class="com.dao.action.PingjiaoAction"></action>
+		<action name="paikemanager" class="com.dao.action.PaikeAction"></action>
+        
+	</package>
+
+</struts>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="pingjiao"
+  id="myeclipse.1357132343343"
+  context-root="/pingjiao"
+  j2ee-spec="5.0"
+  archive="pingjiao.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<!-- 配置数据库连接池 -->
+<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	    <property name="url" value="jdbc:mysql://localhost:3309/pingjiao"/>
+	    <property name="username" value="root"/>
+	    <property name="password" value="root"/>
+	     <!-- 连接池启动时的初始值 -->
+		<property name="initialSize" value="30"/>
+	 	<!-- 连接池的最大值 -->
+	 	<property name="maxActive" value="500"/> 
+ 		<!-- 最大空闲值.当经过一个高峰时间后，连接池可以慢慢将已经用不到的连接慢慢释放一部分，一直减少到maxIdle为止 -->
+		<property name="maxIdle" value="10"/>
+		<!--  最小空闲值.当空闲的连接数少于阀值时，连接池就会预申请去一些连接，以免洪峰来时来不及申请 -->
+		<property name="minIdle" value="2"/>
+</bean>
+
+<!-- 配置SessionFactory -->
+<bean id="sessionFactory"  class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+     <!-- 设置数据源 -->
+     <!-- 依赖注入上面定义的数据源dataSource -->
+     <property name="dataSource" ref="dataSource"/>
+     <!-- 接管了hibernate对象映射文件 -->
+     
+	    <property name="annotatedClasses">
+	       <list>
+	          <value>com.dao.entity.Admin</value>
+	         
+	          <value>com.dao.entity.Attachement</value>
+	          
+	          <value>com.dao.entity.Notice</value>
+	          <value>com.dao.entity.Student</value>
+	          <value>com.dao.entity.Teacher</value>
+	          <value>com.dao.entity.Classes</value>
+	          <value>com.dao.entity.Major</value>
+	        
+	          <value>com.dao.entity.Xuenian</value>
+	          <value>com.dao.entity.Course</value>
+              <value>com.dao.entity.Xuanke</value>
+	          <value>com.dao.entity.Leaveword</value>
+	          <value>com.dao.entity.Pjitems</value>
+	          <value>com.dao.entity.Pingjiao</value>
+	          <value>com.dao.entity.Paike</value>
+	          
+	        </list>
+	    </property>
+    
+     <property name="hibernateProperties">
+	    <value>
+	        	hibernate.dialect=org.hibernate.dialect.MySQLDialect
+	        	hibernate.hbm2ddl.auto=update
+				hibernate.show_sql=true
+				hibernate.cache.use_second_level_cache=false
+        	    hibernate.cache.provider_class=org.hibernate.cache.internal.NoCacheProvider
+        	    hibernate.generate_statistics=true	      
+	    </value>
+    </property>
+</bean>
+
+   
+
+    
+
+</beans>

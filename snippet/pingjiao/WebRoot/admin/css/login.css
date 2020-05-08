@@ -1,0 +1,226 @@
+* {
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    s
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    border: 0 none;
+}
+td {
+    line-height: 1.5;
+}
+body {
+    background:#6094E5;
+    font-family: "Microsoft Yahei";
+    font-size: 12px;
+    line-height: 1.5;
+}
+.main {
+    margin: 145px auto;
+    width: 400px;
+    backgrond-color:Black;
+}
+.logo {
+    background: url("../images/logo_login.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 112px;
+    margin-bottom: 11px;
+    width: 400px;
+}
+.box{
+   
+    
+    background:#fff;
+    height: 320px;
+    margin-bottom: 11px;
+    padding: 30px 0 0 30px;
+    position:relative;
+    width: 420px;
+    border: 5px solid #dedede;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;      
+   
+}
+.error {
+    background: url("../images/error.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: -10px;
+    color: #FF0000;
+    height: 30px;
+    left: 30px;
+    padding: 16px 0 0 30px;
+    position: absolute;
+    width: 245px;
+}
+.box_input {
+    clear: both;
+    height: 50px;
+    line-height: 43px;
+}
+.box span {
+    color: #666666;
+    display: block;
+    float: left;
+    height: 43px;
+    margin-right: 10px;
+    text-align: right;
+    width: 50px;
+}
+.put_box {
+    background: url("../images/login_input_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 43px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    width: 271px;
+}
+.put_box2 {
+    background: url("../images/login_input_bg2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 43px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    width: 271px;
+}
+.put_box3 {
+    background: url("../images/login_input_bg3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 43px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    width: 141px;
+}
+.p1 {
+    background: url("../images/p1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 43px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    width: 330px;
+}
+.p2 {
+    background: url("../images/p2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 43px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    width: 330px;
+}
+.p3 {
+    background: url("../images/p3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 43px;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+    width: 330px;
+}
+.p3 {
+    position: relative;
+}
+.p3 img {
+    left: 120px;
+    position: absolute;
+    top: 1px;
+    z-index: 10;
+}
+.btn_s {
+    background: url("../images/btn_s.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    height: 35px;
+    margin-left: 74px;
+    margin-top: 5px;
+    position: absolute;
+    right: 8px;
+    top: -5px;
+    width: 102px;
+    z-index: 10;
+}
+.inbox {
+    border: 0 none;
+    color: #666666;
+    height: 28px;
+    line-height: 33px;
+    margin: 3px 0 0 44px;
+    width: 265px;
+}
+.inboxy {
+    border: 0 none;
+    color: #666666;
+    height: 28px;
+    line-height: 33px;
+    margin: 3px 0 0 44px;
+    width: 70px;
+}
+.inbox3 {
+    border: 0 none;
+    color: #666666;
+    height: 28px;
+    line-height: 33px;
+    margin: 5px 0 0 14px;
+    width: 100px;
+}
+.login-btn {
+    background: url("../images/login_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    height: 35px;
+    margin-left: 74px;
+    margin-top: 5px;
+    vertical-align: middle;
+    width: 262px;
+}
+.submit {
+    line-height: 39px;
+}
+.submit a {
+    color: #0088CC;
+    padding: 10px 0 0 10px;
+}
+.remmber {
+    padding: 0 0 0 15px;
+}
+.remmber img {
+    float: right;
+    margin-right: 40px;
+    vertical-align: middle;
+}
+.btn {
+    bottom: 40px;
+    left: 44%;
+    margin: 0 auto;
+    position: fixed;
+    width: 200px;
+}
+.btn a {
+    float: left;
+    margin-right: 30px;
+}
+.index_tit {
+    padding-left: 8px;
+}
+
+.system-title {
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #4d4d4d;
+	width:340px;
+	padding-left:10px;
+	padding-bottom:20px;
+}
+.system-subtitle
+{
+	font-size:16px;
+	text-align:center;
+	width:357px;
+	margin-bottom:30px;
+	font-weight:600;
+}
